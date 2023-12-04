@@ -10,10 +10,14 @@ document.getElementById('choose-pizza').onclick = function () {
     document.getElementsByClassName('products')[0].scrollIntoView({behavior: "smooth"});
 }
 
+let users = [
+
+]
+
 let nameInput = document.getElementById('name-input');
 let phoneInput = document.getElementById('phone-input');
 let popup = document.getElementById('popup');
-let popupBtn = document.getElementById('popup-btn')
+let popupBtn = document.getElementById('popup-btn');
 
 nameInput.onkeydown = (e) => {
     if (e.key === '.') return false;
@@ -50,16 +54,20 @@ document.getElementById('create-order').onclick = function (e) {
 
     popup.style.display = 'flex';
 
-    let url = 'http://localhost:3000/users';
+    users.push({
+        name: nameInput.value, phone: phoneInput.value, address: addressInput.value
+    });
 
-    $.ajax({
-        method: 'POST',
-        url: url,
-        data: {name: nameInput.value, phone: phoneInput.value, address: addressInput.value}
-    })
-        .done(function (message){
-            alert('Data')
-        })
+    //let url = 'http://localhost:3000/users';
+
+    // $.ajax({
+    //     method: 'POST',
+    //     url: url,
+    //     data: {name: nameInput.value, phone: phoneInput.value, address: addressInput.value}
+    // })
+    //     .done(function (message){
+    //         alert('Data')
+    //     })
 
     addressInput.value = '';
     phoneInput.value = '';
