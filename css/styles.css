@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("../fonts/MullerBold.otf");
+}
+
+@font-face {
+    font-family: MullerExtraBold;
+    src: url("../fonts/MullerExtraBold.otf");
+}
+
+body {
+    font-family: Muller, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 16px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    width: 489px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(164, 107, 0);
+    line-height: 1;
+}
+
+.main {
+    margin: 132px 0 81px 0;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-info {
+    max-width: 622px;
+}
+
+.main-title {
+    font-size: 45px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(185, 145, 80);
+    font-weight: bold;
+    line-height: 1.222;
+    margin-bottom: 13px;
+}
+
+.main-title span {
+    color: #ffaf18;
+}
+
+.main-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage {
+    display: flex;
+    max-width: 306px;
+    align-items: center;
+    margin-top: 47px;
+}
+
+.advantage-image {
+    margin-right: 16px;
+}
+
+.advantage-title {
+    font-size: 16px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(255, 175, 24);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantage-description {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1;
+}
+
+.main-action {
+    margin-top: 60px;
+}
+
+.btn {
+    background-color: rgb(255, 175, 24);
+    padding: 23px;
+    min-width: 224px;
+    border: none;
+    font-size: 16px;
+    font-family: MullerBold, sans-serif ;
+    color: rgb(56, 36, 0);
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 175, 24);
+    box-shadow: 0 0 5px rgb(255, 175, 24);
+}
+
+.products {
+    padding: 80px 0 120px 0;
+}
+
+.pizzas-title {
+    font-size: 35px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(189, 152, 92);
+    text-align: center;
+}
+
+.product-items {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    width: 282px;
+    text-align: center;
+    padding: 27px 20px 15px 20px;
+    box-sizing: border-box;
+    margin-top: 24px;
+}
+
+.product-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 18px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(56, 36, 0);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+.product-description {
+    font-size: 14px;
+    line-height: 1.286;
+    color: rgb(24, 26, 26);
+    height: 49px;
+    margin-bottom: 15px;
+}
+
+.product-action .btn {
+    width: 242px;
+    padding: 17px;
+}
+
+.order {
+    padding: 125px 0 115px 0;
+    overflow: hidden;
+}
+
+.order .container{
+    display: flex;
+}
+
+.order-text-title {
+    font-size: 35px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(185, 145, 80);
+    font-weight: bold;
+    line-height: 1.286;
+    text-align: left;
+    margin-bottom: 65px;
+}
+
+.order-text {
+    max-width: 385px;
+}
+
+.order-text-title span {
+    color: rgb(255, 175, 24);
+}
+
+.order-text-message {
+    font-size: 16px;
+    font-family: Muller, sans-serif;
+    color: rgb(185, 145, 80);
+    line-height: 1.5;
+}
+
+.order-form {
+    margin-left: 122px;
+    max-width: 330px;
+}
+
+.order-form input {
+    width: 330px;
+    padding: 24px;
+    border: 1px solid #b99150;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.order-form input::placeholder {
+    font-size: 18px;
+    font-family: Muller, sans-serif;
+    color: rgb(203, 168, 110);
+}
+
+.order-form .btn {
+    width: 330px;
+    height: 60px;
+}
+
+.order-image {
+    width: 282px;
+    position: relative;
+    margin-left: 78px;
+}
+
+.order-image img {
+    position: absolute;
+    left: 10px;
+    bottom: -35px;
+}
+
+.footer {
+    padding: 16px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 357px;
+}
+
+.roots {
+    font-size: 12px;
+    font-family: Muller, sans-serif;
+    color: rgb(186, 179, 179);
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.popup-bg {
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    width: 50%;
+    background-color: white;
+    border-radius: 30px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.popup-text {
+    font-size: 30px;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.mfp-content {
+    padding: 20px;
+}
+.mfp-content img {
+    width: 500px;
+}
+
+
+
+
